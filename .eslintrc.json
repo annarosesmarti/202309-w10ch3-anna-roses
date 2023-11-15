@@ -1,7 +1,8 @@
 {
   "env": {
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": ["xo", "prettier"],
   "overrides": [
@@ -15,6 +16,12 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-implicit-coercion": "off"
+    "no-implicit-coercion": "off",
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": ["Router"]
+      }
+    ]
   }
 }
