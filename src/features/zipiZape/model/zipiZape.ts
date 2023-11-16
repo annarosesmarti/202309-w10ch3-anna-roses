@@ -26,6 +26,6 @@ const zipiZapeSchema = new Schema<ZipiZapeStructure>({
   },
 });
 
-const ZipiZape = model("ZipiZape", zipiZapeSchema, "zipiZape");
+const ZipiZape = model("ZipiZape", zipiZapeSchema, "zipizape");
 
 export default ZipiZape;
