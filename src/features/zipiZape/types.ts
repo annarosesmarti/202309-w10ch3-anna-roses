@@ -1,3 +1,5 @@
+import { type Request } from "express";
+
 export interface ZipiZapeStructure {
   _id: string;
   name: string;
@@ -9,4 +11,7 @@ export interface ZipiZapeStructure {
 
 export interface ZipiZapeRepository {
   getZipiZape: () => Promise<ZipiZapeStructure[]>;
+  getZipiZapeById: (twinId: string) => Promise<ZipiZapeStructure>;
 }
+
+export type ZipiZapeByIdRequest = Request<{ twinId: string }>;
