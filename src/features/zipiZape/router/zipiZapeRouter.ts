@@ -10,4 +10,6 @@ const zipiZapeController = new ZipiZapeController(zipiZapeMongooseRepository);
 
 zipiZapeRouter.get("/", zipiZapeController.getZipiZape);
 
+zipiZapeRouter.get("/:twinId", zipiZapeController.getZipiZapeById);
+
 export default zipiZapeRouter;
